@@ -189,6 +189,7 @@ h2 {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+  display: inline-block;
   background: var(--color-background);
   color: var(--color-for-title);
   border-radius: 4px;
