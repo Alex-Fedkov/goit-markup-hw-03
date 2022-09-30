@@ -63,7 +63,7 @@ a {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -74,9 +74,10 @@ a {
   padding-bottom: 94px;
 }
 
-.section-list {
+.section-padding {
   padding-top: 0;
 }
+
 
 /*расстановка навигации*/
 .container-nav {
@@ -230,9 +231,20 @@ h3 {
 }
 
 /* карточки */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .skill-list {
   display: flex;
   flex-wrap: nowrap;
+}
+
+p {
+  line-height: 1.71;
 }
 
 .skills-item {
@@ -245,7 +257,7 @@ h3 {
   width: 370px;
 }
 
-.comand {
+.comand-background {
   background: var(--color-background);
 }
 
@@ -274,9 +286,18 @@ h3 {
 .teams {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--color-background-cart);
 }
 
 /* футер */
+.footer {
+  padding: 60px 0;
+}
+
+footer {
+  background: var(--color-footer);
+}
+
 .adress {
   font-style: normal;
   font-weight: 400;
@@ -293,7 +314,6 @@ h3 {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/*studio*/
 .studio-footer {
   font-style: normal;
   font-weight: 700;
@@ -302,18 +322,14 @@ h3 {
   color: var(--color-button-text);
 }
 
-.logo {
-  margin-bottom: 20px;
-}
-
-.footer {
-  padding: 60px 0;
-}
-
 .footer-adress li:not(:last-child) {
   margin-bottom: 9px;
 }
 
-footer {
-  background: var(--color-footer);
+a {
+  display: block;
+}
+
+footer .studio-footer {
+  margin-bottom: 20px;
 }

@@ -50,6 +50,8 @@ body {
   --color-background: #f5f4fa;
   /*цвет рамок*/
   --color-border: #eeeeee;
+  /*бордер header*/
+  --color-border-header: #ECECEC;
 }
 
 .list {
@@ -63,7 +65,7 @@ a {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -80,6 +82,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .head nav {
@@ -161,7 +164,7 @@ header .studio {
 }
 
 /*заголовки*/
-h2 {
+h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -192,7 +195,6 @@ h2 {
   display: inline-block;
   background: var(--color-background);
   color: var(--color-for-title);
-  border-radius: 4px;
 }
 
 .button-filtr:hover,
@@ -220,9 +222,14 @@ p {
   margin-bottom: 30px;
 }
 
+/*убираем margin в 3-х последних картах*/
+.skill-list li:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
 /*название проектов*/
 .titles {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 /*бордер под карточками*/
@@ -233,6 +240,14 @@ p {
 }
 
 /* футер */
+.footer {
+  padding: 60px 0;
+}
+
+footer {
+  background: var(--color-footer);
+}
+
 .adress {
   font-style: normal;
   font-weight: 400;
@@ -249,7 +264,6 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/*studio*/
 .studio-footer {
   font-style: normal;
   font-weight: 700;
@@ -258,18 +272,14 @@ p {
   color: var(--color-button-text);
 }
 
-.logo {
-  margin-bottom: 20px;
-}
-
-.footer {
-  padding: 60px 0;
-}
-
 .footer-adress li:not(:last-child) {
   margin-bottom: 9px;
 }
 
-footer {
-  background: var(--color-footer);
+a {
+  display: block;
+}
+
+footer .studio-footer {
+  margin-bottom: 20px;
 }
